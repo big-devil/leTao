@@ -1,4 +1,6 @@
 $(function(){
+
+
     // $('button[type=submit]').click(function(event){
     //     event.preventDefault();
     //     $.ajax({
@@ -82,7 +84,7 @@ $('form').bootstrapValidator({
             // 修改选择器
             var validator = $("form").data('bootstrapValidator');  //获取表单校验实例
             if(backData.success){
-                window.location.href = '../manage/index.html'
+                window.location.href = './index.html'
             }else{
                 if(backData.error == 1000){
                   // 参数：1 要出现提示的输入行   2 在什么时候出现提示   3 提示的内容是什么

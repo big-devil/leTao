@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二级分类</title>
+    <!-- 导入bootstrap的css -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 导入样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet/less" href="./less/categorySecond.less">
+    <script src="./lib/less/less-js/less.js"></script>
+    <!-- 导入图表js -->
+    <script src="./lib/echarts/echarts.min.js"></script>
+</head>
+
+<body>
+    <div id="homePage">
+        <div class="less">
+            <div class="top">
+                <a href="#">
+                    <h2>WOT</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="userName text-center">
+                    <img src="./image/default.png" alt="">
+                    <span>超级管理员</span>
+                </div>
+
+                <ul class="management">
+                    <li class="active">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-user"></i>用户管理</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list"></i>分类管理</a>
+                        <div class="child">
+                            <a href="#">一级标题</a>
+                            <a href="#">二级标题</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-tags"></i>商品管理</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <a href="#">
+                    <i class="MenuBar glyphicon glyphicon-align-justify"></i>
+                </a>
+                <a href="#">
+                    <i class="Exit glyphicon glyphicon-log-out pull-right"></i>
+                </a>
+            </div>
+            <div class="content">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">系统管理</a>
+                    </li>
+                    <li>分类管理</li>
+                    <li class="active">二级分类</li>
+                </ol>
+
+                <!-- 增加分类 -->
+                <a href="#" class="btn btn-default addListing">增加分类</a>
+
+                <!-- 点击 增加分类  出现模态框 -->
+                <div class="modal fade addListing-modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">添加分类</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="dropdown">
+                                    <span>一级标题:</span>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                        请选择
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li>
+                                            <a href="#">Action</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" placeholder="请输入二级分类名称">
+                                <input type="file">
+                                <a href="#"></a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary">确定</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+            </div>
+        </div>
+
+        <!-- 退出登录模态框 -->
+        <div class="modal myModal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">温馨提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        <i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary exit-register">确定</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+</body>
+
+</html>
+<!-- 导入jq -->
+<script src="./lib/jquery/jquery.min.js"></script>
+<!-- 导入bs的js -->
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<!-- 自己的js -->
+<script src="./js/categorySecond.js"></script>
